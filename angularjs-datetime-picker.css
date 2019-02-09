@@ -70,5 +70,5 @@
 }
 
 .angularjs-datetime-picker input[type=range] {
-  width: 150px;
+  width: 100%;
 }

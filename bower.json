@@ -1,10 +1,10 @@
 {
-  "name": "angularjs-datetime-picker",
+  "name": "angularjs-datetime-picker-kalgecin",
   "main": "angularjs-datetime-picker.js",
-  "version": "0.1.20",
-  "homepage": "https://github.com/kineticsocial/angularjs-datetime-picker",
+  "version": "0.1.21",
+  "homepage": "https://github.com/kalgecin/angularjs-datetime-picker",
   "authors": [
-    "Allen Kim <allen.kim@kineticsocial.com>"
+    "Michael Kitange <kalgecin@gmail.com>"
   ],
   "description": "Datepicker/Datetime picker for your INPUT tag",
   "keywords": [
@@ -23,6 +23,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.4"
+    "angular": "^1.4.4",
+    "moment": "^2.18.1"
   }
 }

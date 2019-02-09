@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="angularjs-datetime-picker.css" />
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
   <script src="angularjs-datetime-picker.js"></script>
   <script>
     angular.module('myApp',['angularjs-datetime-picker']);
@@ -18,25 +19,25 @@
   date4='2015-01-01';">
   <h1>Datetime Picker</h1>
 
-  &lt;input ng-model="date4" datetime-picker date-only /> <br/>
-  <input ng-model="date1" datetime-picker date-only size="30" /> <br/> <br/>
+  &lt;input ng-model="date1" datetime-picker date-only /> <br/>
+  <input ng-model="date1" datetime-picker date-only size="50"/> <br/> <br/>
 
-  &lt;input ng-model="date2" datetime-picker date-format="yyyy-MM-dd" date-only /> <br/>
-  <input ng-model="date2" datetime-picker date-format="yyyy-MM-dd" size="30"  date-only /> <br/> <br/> <br/>
+  &lt;input ng-model="date2" datetime-picker date-format="ddd MMM DD YYYY HH:mm:ss ZZ" date-only /> <br/>
+  <input ng-model="date2" datetime-picker date-format="ddd MMM DD YYYY HH:mm:ss ZZ" date-only size="50"/> <br/> <br/> <br/>
 
-  &lt;input ng-model="date3" datetime-picker date-format="yyyy-MM-dd HH:mm:ss" close-on-select="false" /> <br/>
-  <input ng-model="date3" datetime-picker date-format="yyyy-MM-dd HH:mm:ss" close-on-select="false" size="30" /> <br/> <br/>
+  &lt;input ng-model="date3" datetime-picker date-format="YYYY-MM-DD HH:mm:ss" close-on-select="false" /> <br/>
+  <input ng-model="date3" datetime-picker date-format="YYYY-MM-DD HH:mm:ss" close-on-select="false" size="50"/> <br/> <br/>
 
-  &lt;input ng-model="date4" datetime-picker hour="23" minute='59'/><br/>
-  <input ng-model="date4" datetime-picker hour="23" minute='59' size="30" /> <br/> <br/>
+  &lt;input ng-model="date4" datetime-picker hour="23" minute="59"/><br/>
+  <input ng-model="date4" datetime-picker hour="23" minute="59" size="50"/> <br/> <br/>
 
   gmtDate : {{gmtDate}}<br/>
-  &lt;input type="date" ng-model="gmtDate" size="30" /><br/>
-  <input type="date" ng-model="gmtDate" datetime-picker date-format="yyyy-MM-dd HH:mm:ss" size="30" />
+  &lt;input type="date" ng-model="gmtDate" datetime-picker date-format="YYYY-MM-DD HH:mm:ss" size="30" /><br/>
+  <input type="date" ng-model="gmtDate" datetime-picker date-format="YYYY-MM-DD HH:mm:ss" size="30" size="50"/>
 
   <div style="position:fixed; bottom:0">
-    &lt;input ng-model="date5" datetime-picker date-format="yyyy-MM-dd HH:mm:ss" year="2014" month="12" day="31" hour="23" minute="59" /><br/>
-    <input ng-model="date5" datetime-picker date-format="yyyy-MM-dd HH:mm:ss"  size="30" year="2014" month="12" day="31" hour="23" minute="59" /> <br/> <br/>
+    &lt;input ng-model="date5" datetime-picker date-format="YYYY-MM-DD HH:mm:ss" year="2014" month="12" day="31" hour="23" minute="59" /><br/>
+    <input ng-model="date5" datetime-picker date-format="YYYY-MM-DD HH:mm:ss" year="2014" month="12" day="31" hour="23" minute="59" size="50"/> <br/> <br/>
   </div>
 
 </body>
