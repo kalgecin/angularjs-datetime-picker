@@ -194,7 +194,7 @@
             scope.$applyAsync(function () {
                 ctrl.triggerEl = angular.element(element[0].triggerEl);
                 if (attrs.ngModel) { // need to parse date string
-                    let dateStr = '' + ctrl.triggerEl.scope().$eval(attrs.ngModel);
+                    var dateStr = '' + ctrl.triggerEl.scope().$eval(attrs.ngModel);
                     if (dateStr) {
                         if(dateFormat) {
                             scope.selectedDate = moment(dateStr, dateFormat).toDate();
@@ -205,13 +205,13 @@
                 }
 
                 if (!scope.selectedDate || isNaN(scope.selectedDate.getTime())) { // no predefined date
-                    let today = new Date();
-                    let year = scope.year || today.getFullYear();
-                    let month = scope.month ? (scope.month - 1) : today.getMonth();
-                    let day = scope.day || today.getDate();
-                    let hour = scope.hour || today.getHours();
-                    let minute = scope.minute || today.getMinutes();
-                    let second = scope.second || today.getSeconds();
+                    var today = new Date();
+                    var year = scope.year || today.getFullYear();
+                    var month = scope.month ? (scope.month - 1) : today.getMonth();
+                    var day = scope.day || today.getDate();
+                    var hour = scope.hour || today.getHours();
+                    var minute = scope.minute || today.getMinutes();
+                    var second = scope.second || today.getSeconds();
                     scope.selectedDate = new Date(year, month, day, hour, minute, second);
                 }
                 scope.inputHour = scope.selectedDate.getHours();
@@ -233,7 +233,7 @@
             };
 
             scope.setDate = function (evt) {
-                let target = angular.element(evt.target)[0];
+                var target = angular.element(evt.target)[0];
                 if (target.className.indexOf('selectable') !== -1) {
                     scope.updateNgModel(parseInt(target.innerHTML));
                     if (scope.closeOnSelect !== false) {
@@ -322,7 +322,9 @@
             }
         };
     };
+
     datetimePicker.$inject = ['$parse', 'DatetimePicker'];
+
     angular.module('angularjs-datetime-picker').directive('datetimePicker', datetimePicker);
 
 })();
