@@ -14,7 +14,7 @@ To Get Started
 
 For Bower users,
 
-  `$ bower install angularjs-datetime-picker`
+  `$ bower install angularjs-datetime-picker-kalgecin`
 
 1. Include `angularjs-datetime-picker.js` and `angularjs-datetime-picker.css`
 
