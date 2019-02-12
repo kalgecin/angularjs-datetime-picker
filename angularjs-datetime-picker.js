@@ -251,11 +251,7 @@
                 if (attrs.ngModel) {
                     //console.log('attrs.ngModel',attrs.ngModel);
                     var elScope = ctrl.triggerEl.scope(), dateValue;
-                    if (elScope.$eval(attrs.ngModel) && elScope.$eval(attrs.ngModel).constructor.name === 'Date') {
-                        dateValue = scope.selectedDate;
-                    } else {
-                        dateValue = moment(scope.selectedDate).format(dateFormat);
-                    }
+                    dateValue = scope.selectedDate;
                     elScope.$eval(attrs.ngModel + '= date', {date: dateValue});
                 }
             };
