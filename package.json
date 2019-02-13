@@ -1,6 +1,6 @@
 {
-  "name": "angularjs-datetime-picker",
-  "version": "0.1.20",
+  "name": "angularjs-datetime-picker-kalgecin",
+  "version": "0.1.24",
   "description": "Very Lightweight AngularJS DateTime Picker Without Using jQuery, bootStrap",
   "main": "angularjs-datetime-picker.js",
   "scripts": {

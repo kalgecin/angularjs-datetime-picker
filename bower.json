@@ -1,7 +1,7 @@
 {
   "name": "angularjs-datetime-picker-kalgecin",
   "main": "angularjs-datetime-picker.js",
-  "version": "0.1.22",
+  "version": "0.1.24",
   "homepage": "https://github.com/kalgecin/angularjs-datetime-picker",
   "authors": [
     "Michael Kitange <kalgecin@gmail.com>"

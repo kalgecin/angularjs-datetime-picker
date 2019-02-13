@@ -196,11 +196,7 @@
                 if (attrs.ngModel) { // need to parse date string
                     var dateStr = '' + ctrl.triggerEl.scope().$eval(attrs.ngModel);
                     if (dateStr) {
-                        if(dateFormat) {
-                            scope.selectedDate = moment(dateStr, dateFormat).toDate();
-                        }else{
-                            scope.selectedDate = new Date(dateStr);
-                        }
+                        scope.selectedDate = moment(dateStr).toDate();
                     }
                 }
 
